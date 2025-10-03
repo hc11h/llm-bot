@@ -35,7 +35,7 @@ class OpenAIService:
                 
             except openai.RateLimitError:
                 if attempt < retries - 1:
-                    wait_time = (attempt + 1) * 2  # Exponential backoff
+                    wait_time = (attempt + 1) * 2 
                     time.sleep(wait_time)
                     continue
                 return "I'm experiencing high demand right now. Please try again in a moment."

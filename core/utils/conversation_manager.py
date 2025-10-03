@@ -11,8 +11,7 @@ class ConversationManager:
             self.history.pop(0)
     
     def get_recent_messages(self, max_turns: int = 4) -> List[Dict]:
-        # Return recent messages in chronological order
-        recent = self.history[-max_turns*2:]  # Each turn has user + assistant
+        recent = self.history[-max_turns*2:]  
         return recent
     
     def reset(self):

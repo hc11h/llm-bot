@@ -14,7 +14,6 @@ class DomainRegistry:
         self._register_default_domains()
     
     def _register_default_domains(self):
-        # Register default domains
         self.instruction_engine.register_domain(
             "general",
             "You are a helpful assistant. Answer questions accurately and be friendly.",
