@@ -1,4 +1,4 @@
-from instruction_engine import InstructionEngine
+from core.instruction.instruction_engine import InstructionEngine
 
 class DomainRegistry:
     _instance = None

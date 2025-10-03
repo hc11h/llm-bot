@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Optional
-from openai_service import OpenAIService
-from conversation_manager import ConversationManager
+from core.services.openai_service import OpenAIService
+from core.utils.conversation_manager import ConversationManager
 
 class BaseAgent(ABC):
     def __init__(self, system_prompt: str, model: str = "gpt-3.5-turbo"):

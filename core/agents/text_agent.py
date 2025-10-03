@@ -1,5 +1,5 @@
-from base_agent import BaseAgent
-from domain_registry import DomainRegistry
+from core.agents.base_agent import BaseAgent
+from core.instruction.domain_registry import DomainRegistry
 
 class TextAgent(BaseAgent):
     def __init__(self, domain: str = "general"):
